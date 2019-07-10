@@ -1793,7 +1793,8 @@ select:focus {
 }
 .about-text span{
     color: #222222;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bold;
     line-height: 30px;
 }
 .about-text p{
@@ -3237,6 +3238,7 @@ select:focus {
 }
 .footer-bottom-area .copyright-text {
     margin: 0;
+    text-align: center;
 }
 .footer-bottom-area .copyright-text p {
     color: #d9d7e8;
@@ -5685,7 +5687,7 @@ select:focus {
 .main-project-area{
     position: relative;
     display: block;
-    background: #ffffff;
+    background: #e0e0e0;
     padding: 100px 0 50px;
 }
 .project-filter {

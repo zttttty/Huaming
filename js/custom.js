@@ -27,7 +27,15 @@
 
 "use strict";
 
+function toAbout() {
+    $('.current').removeClass('current');
+    $("#c_about").addClass("current");
+}
 
+function toComments() {
+    $('.current').removeClass('current');
+    $("#c_comments").addClass("current");
+}
 
 //====Main menu===
 function mainmenu() {
