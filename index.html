@@ -101,31 +101,10 @@
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
                                 <li class="current"><a href="index.html">主页</a></li>
-                                <li class="dropdown" id="c_about"><a href="#about" onclick="toAbout()">企业概况</a>
-                                    <ul>
-                                        <li><a href="about.html">About Company</a></li>
-                                        <li><a href="testimonials.html">Testimonials</a></li>
-                                        <li><a href="faq.html">FAQ’s</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="project.html">产品中心</a>
-                                    <ul>
-                                        <li><a href="ser-automotive.html">Automotive Parts</a></li>
-                                        <li><a href="ser-construction.html">Construction & Eng</a></li>
-                                        <li><a href="ser-energy.html">Energy Distribution</a></li>
-                                        <li><a href="ser-petroleum.html">Petroleum and Gas</a></li>
-                                        <li><a href="ser-designing.html">Designing Cooling</a></li>
-                                        <li><a href="ser-robot.html">Robot Production</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="project.html">技术装备</a>
-                                    <ul>
-                                        <li><a href="project.html">Projects Style One</a></li>
-                                        <li><a href="project-v2.html">Projects Style Two</a></li>
-                                        <li><a href="project-v3.html">Projects Style Masonry</a></li>
-                                        <li><a href="project-single.html">Projects Single</a></li>
-                                    </ul>
-                                </li>
+                                <!-- <li id="c_about"><a href="#about" onclick="toAbout()">企业概况</a></li> -->
+                                <li id="c_about"><a href="#about" onclick="toPart('c_about')">企业概况</a></li>
+                                <li id="c_equip"><a href="#equip" onclick="toPart('c_equip')">技术装备</a></li>
+                                <li><a href="project.html">产品中心</a></li>
                                 <li class="dropdown"><a href="blog.html">人才招聘</a>
                                     <ul>
                                         <li><a href="blog.html">Blog Default</a></li>
@@ -133,15 +112,8 @@
                                         <li><a href="blog-single.html">Blog Single Post</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="shop.html">在线留言</a>
-                                    <ul>
-                                        <li><a href="shop.html">Shop Products</a></li>
-                                        <li><a href="shop-single.html">Products Single</a></li>
-                                        <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                        <li><a href="checkout.html">Checkout</a></li>
-                                        <li><a href="account.html">My Account</a></li>
-                                    </ul>
-                                </li>
+                                <!-- <li><a onclick="toComments()">在线留言</a></li> -->
+                                <li><a href="contact.html#comments">在线留言</a></li>
                                 <li><a href="contact.html">联系我们</a></li>
                             </ul>
                         </div>
@@ -438,7 +410,7 @@
                         </div>
                         <div class="text-box">
                             <h3>先进的生产技术</h3>
-                            <p>We are experts in accelerate performance and achieving high-impact outcomes.</p>
+                            <p>We are experts in achieving the most advanced skills and technologies.</p>
                         </div>
                     </div>
                 </div>
@@ -453,7 +425,7 @@
                         </div>
                         <div class="text-box">
                             <h3>严格的材质要求</h3>
-                            <p>We're at work in practically  delivering the solutions our customers.</p>
+                            <p>We're at work in practically looking for materials with strict requirements.</p>
                         </div>
                     </div>
                 </div>
@@ -468,7 +440,7 @@
                         </div>
                         <div class="text-box">
                             <h3>卓越的产品质量</h3>
-                            <p>We are experts in accelerate performance and achieving high-impact outcomes.</p>
+                            <p>We are trying best to produce excellent product with our effort.</p>
                         </div>
                     </div>
                 </div>
@@ -486,10 +458,10 @@
             <div class="col-xl-12">
                 <div class="inner-content fix wow fadeInUp" data-wow-delay="100ms">
                     <div class="title float-left">
-                        <h3>Over 24 years experience & knowledge of international industrial systems.</h3>
+                        <h3>丰富的生产经验、先进的生产工艺、严谨的生产态度造就卓越的产品质量。</h3>
                     </div>
                     <div class="button float-right">
-                        <a class="btn-one" href="#">Get a Quote<span class="icon-thin-right-arrow"></span></a>
+                        <a class="btn-one" href="project.html">进入产品中心<span class="icon-thin-right-arrow"></span></a>
                     </div>
                 </div>
             </div>    
@@ -499,12 +471,12 @@
 <!--End slogan area-->     
 
 <!--Start services style1 area-->
-<section class="services-style1-area secpd3">
+<section class="services-style1-area secpd3" id="equip">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
                 <div class="service_s1_title sec-title">
-                    <div class="title"><span>About Screwer</span></div>
+                    <div class="title"><span>技术装备</span></div>
                 </div>
                 <div class="service_s1_text">
                     <p>We Provides a wide range of high performance services across multiple industries and technologies</p>
@@ -580,88 +552,13 @@
 </section>
 <!--End services style1 area-->
 
-<!--Start Company Info area-->
-<section class="company-info-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6">
-                <div class="video-holder-box wow slideInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <div class="img-holder">
-                        <img src="images/resources/video-gallery.jpg" alt="Awesome Image">
-                        <div class="icon-holder">
-                            <div class="icon">
-                                <div class="inner">
-                                    <a class="html5lightbox" title="Screwer Video Gallery" href="https://www.youtube.com/watch?v=p25gICT63ek">
-                                        <span class="flaticon-music-player-play"></span>
-                                    </a>
-                                </div>   
-                            </div>
-                        </div>
-                    </div>    
-                </div>    
-            </div>
-            <div class="col-xl-6">
-                <div class="company-info-content">
-                    <h1>An Experienced International energy company</h1>
-                    <span>With more than half a century of experience and thousands of innovative achievements</span> 
-                    <p>Screwer has completed hundreds of industrial projects in all industrial sectors. With a long list of products and never ending customer support we are able to guarantee a very high level of satisfaction for our clients. We offer the best line of services with latest technology, equipment line of services.</p> 
-                    <a class="btn-two learn-more" href="#">Learn More About Screwer<span class="icon-thin-right-arrow"></span></a>  
-                </div>    
-            </div>
-        </div>
-        <div class="row company-info">
-            <!--Start single info of company-->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-info-of-company wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-
-                    <div class="icon-holder one">
-                        <span class="flaticon-accept"></span>    
-                    </div> 
-                    <div class="title-holder">
-                        <h3>20 years of Expericence</h3>
-                        <span>An ISO 9001:2005</span>
-                    </div>   
-                </div>
-            </div>
-            <!--End single info of company-->
-            <!--Start single info of company-->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-info-of-company two wow fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="icon-holder two">
-                        <span class="flaticon-accept"></span>    
-                    </div> 
-                    <div class="title-holder">
-                        <h3>Award Winning Company</h3>
-                        <span>127+ Awards won</span>
-                    </div>   
-                </div>
-            </div>
-            <!--End single info of company-->
-            <!--Start single info of company-->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-info-of-company three wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                    <div class="icon-holder three">
-                        <span class="flaticon-accept"></span>    
-                    </div> 
-                    <div class="title-holder">
-                        <h3>#1 Supplier in Region</h3>
-                        <span>Since 1987</span>
-                    </div>   
-                </div>
-            </div>
-            <!--End single info of company-->
-        </div>    
-    </div>
-</section>
-<!--End Company Info area-->
-
 <!--Start Featured project area-->
 <section class="latest-project-area">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
                 <div class="sec-title clr-white float-left">
-                    <div class="title"><span>Latest projects</span></div>
+                    <div class="title"><span>工作环境</span></div>
                 </div>
             </div>
         </div>
@@ -767,75 +664,6 @@
 </section>
 <!--End Featured project area-->
 
-<!--Start fact counter area-->
-<section class="fact-counter-area">
-    <div class="container">
-        <div class="row">
-            <!--Start Single fact counter-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-fact-counter">
-                    <div class="icon-box">
-                        <span class="icon-worker"></span>    
-                    </div>
-                    <div class="count-box">
-                        <h1><span class="timer" data-from="1" data-to="570" data-speed="5000" data-refresh-interval="50">570</span></h1>
-                        <div class="title">
-                            <h3>Professtional<br> Experts & Engineers</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Single fact counter-->
-            <!--Start Single fact counter-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-fact-counter">
-                    <div class="icon-box">
-                        <span class="icon-packs"></span>    
-                    </div>
-                    <div class="count-box">
-                        <h1><span class="timer" data-from="1" data-to="898" data-speed="5000" data-refresh-interval="50">898</span></h1>
-                        <div class="title">
-                            <h3>Industry<br> Projects</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Single fact counter-->
-            <!--Start Single fact counter-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-fact-counter">
-                    <div class="icon-box">
-                        <span class="icon-factory-1"></span>    
-                    </div>
-                    <div class="count-box">
-                        <h1><span class="timer" data-from="1" data-to="102" data-speed="5000" data-refresh-interval="50">102</span></h1>
-                        <div class="title">
-                            <h3>Factories<br> WordWide</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Single fact counter-->
-            <!--Start Single fact counter-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-fact-counter">
-                    <div class="icon-box">
-                        <span class="icon-mechanical-arm"></span>    
-                    </div>
-                    <div class="count-box">
-                        <h1><span class="timer" data-from="1" data-to="1876" data-speed="5000" data-refresh-interval="50">1876</span></h1>
-                        <div class="title">
-                            <h3>Satisfied<br> Customers</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Single fact counter-->
-        </div>
-    </div>
-</section>
-<!--End fact counter area-->
-
 <!--Start latest blog area-->
 <section class="latest-blog-area">
     <div class="container inner-content">
@@ -905,296 +733,15 @@
 </section>
 <!--End latest blog area-->
 
-<!--Start Choose area-->
-<section class="choose-area" style="background-image: url(images/parallax-background/choose-bg.jpg);">
-    <div class="container">
-        <div class="choose-title">
-            <h1>Good Reasons to Choose Screwer</h1>
-            <p>We are the world class engineering manufacturer providing the highest quality products, services and solutions to our customers.</p>
-        </div>
-        <div class="row">
-            <!--Start Single Choose Item-->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-choose-item text-center wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1200ms">
-                    <div class="iocn-holder">
-                        <img src="images/icon/choose-1.png" alt="Icon">
-                    </div>
-                    <div class="text-holder">
-                        <h3>Punctual Delivery Time</h3>
-                        <p>To take a trivial example, which of us ever undertakes laborious physical exercis except some advantage from it.</p>
-                    </div>
-                </div>   
-            </div>
-            <!--End Single Choose Item-->
-            <!--Start Single Choose Item-->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-choose-item bg1 text-center wow fadeInDown" data-wow-delay="200ms" data-wow-duration="1200ms">
-                    <div class="iocn-holder">
-                        <img src="images/icon/choose-2.png" alt="Icon">
-                    </div>
-                    <div class="text-holder">
-                        <h3>Smart Technology</h3>
-                        <p>Explain to you how all this mistaken idea of denouncing pleasure & our praising pain born & complete system.</p>
-                    </div>
-                </div>   
-            </div>
-            <!--End Single Choose Item-->
-            <!--Start Single Choose Item-->
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                <div class="single-choose-item bg2 text-center wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1200ms">
-                    <div class="iocn-holder">
-                        <img src="images/icon/choose-3.png" alt="Icon">
-                    </div>
-                    <div class="text-holder">
-                        <h3>Professional Team</h3>
-                        <p>Denouncing pleasure & praisings pain was born and we will give you a complete account expound actual teachings.</p>
-                    </div>
-                </div>   
-            </div>
-            <!--End Single Choose Item-->
-        </div>
-    </div>
-</section>
-<!--End Choose area-->  
-
-<!--Start Call Us area-->
-<section class="call-us-area">
-    <div class="call-us-bg" style="background-image: url(images/parallax-background/call-us-bg.jpg);"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="sec-title call-us-title">
-                    <div class="title"><span>Call Us or Fill the Form</span></div>
-                </div>
-                <div class="call-us-text">
-                    <p>We are the world class engineering manufacturer providing the highest quality products, services and solutions to our customers.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xl-4 col-lg-5">
-                <div class="contact-info-box">
-                    <ul>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-mobile-phone"></span>
-                            </div>
-                            <div class="title">
-                                <h3>Troll Free Number</h3>
-                                <span>+1 001-765-4321 </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-email"></span>
-                            </div>
-                            <div class="title">
-                                <h3>Send us an e-mail.</h3>
-                                <span>office@example.com</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <span class="icon-time-and-date"></span>
-                            </div>
-                            <div class="title">
-                                <h3>Working Hours</h3>
-                                <span>Mon - Sat: 9:00 - 19:00</span>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="find-map-box">
-                        <div class="icon">
-                            <span class="icon-location"></span>    
-                        </div>
-                        <div class="text">
-                            <a class="btn-two" href="#">Find Us on Map<span class="icon-thin-right-arrow"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-8 col-lg-7">
-                <div class="contact-info-form">
-                    <form id="contact-info-form" name="contact_info_form" class="default-form" action="#" method="post">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="input-box">
-                                    <input type="text" name="form_name" value="" placeholder="Full Name*" required="">
-                                </div>
-                                <div class="input-box"> 
-                                    <input type="email" name="form_email" value="" placeholder="Email Address*" required="">
-                                </div>
-                                <div class="input-box">
-                                    <input type="text" name="form_phn" value="" placeholder="Phone Number">
-                                </div>
-                                <div class="input-box">
-                                    <input type="text" name="company_name" value="" placeholder="Company Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="input-box">    
-                                    <textarea name="requirements" placeholder="Your Requirements"></textarea>
-                                </div>
-                                <div class="input-box">
-                                    <button class="btn-one" type="submit">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<!--End Call Us area-->
- 
-<!--Start Brand area-->  
-<section class="brand-area">
-    <div class="container">
-        <div class="row">
-            <!--Start Single Brand Item-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-brand-item wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                    <a href="#"><img src="images/brand/1.png" alt="Awesome Brand Image"></a>
-                </div>
-            </div>
-            <!--End Single Brand Item-->
-            <!--Start Single Brand Item-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-brand-item wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <a href="#"><img src="images/brand/2.png" alt="Awesome Brand Image"></a>
-                </div>
-            </div>
-            <!--End Single Brand Item-->
-            <!--Start Single Brand Item-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-brand-item wow fadeInUp" data-wow-delay="400ms" data-wow-duration="1500ms">
-                    <a href="#"><img src="images/brand/3.png" alt="Awesome Brand Image"></a>
-                </div>
-            </div>
-            <!--End Single Brand Item-->
-            <!--Start Single Brand Item-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-brand-item wow fadeInUp" data-wow-delay="600ms" data-wow-duration="1500ms">
-                    <a href="#"><img src="images/brand/4.png" alt="Awesome Brand Image"></a>
-                </div>
-            </div>
-            <!--End Single Brand Item-->
-        </div>
-    </div>
-</section>
-<!--End Brand area-->           
-  
-<!--Start footer area-->  
-<footer class="footer-area">
-    <div class="container">
-        <div class="row">
-            <!--Start single footer widget-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-footer-widget marbtm50">
-                    <div class="title">
-                        <h3>About Our Company</h3>
-                    </div>
-                    <div class="company-info-text">
-                        <div class="text-box">
-                            <p>We are the world class engineering manufacturer providing the highest quality products to our customers. With more than half a century of experience and 1000 of innovative achievements</p>
-                        </div>
-                        <div class="call-officers">
-                            <div class="icon">
-                                <span class="icon-phone-call"></span>       
-                            </div> 
-                            <div class="text">
-                                <span>Talk to Our Officers</span>
-                                <h3 class="clr1">+1 001-765-4321</h3>
-                            </div>  
-                        </div>      
-                    </div>
-                </div>
-            </div>
-            <!--End single footer widget-->
-            <!--Start single footer widget-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-footer-widget marbtm50">
-                    <div class="title">
-                        <h3>Our Solutions</h3>
-                    </div>
-                    <ul class="solutions-links">
-                        <li><a href="#">Mechanical Engineering</a></li>
-                        <li><a href="#">Automotive Parts and System</a></li>
-                        <li><a href="#">Construction and Engineering</a></li>
-                        <li><a href="#">Energy Distribution and Gridsn</a></li>
-                        <li><a href="#">Bridge Construction</a></li>
-                        <li><a href="#">Oil & Gas Energy</a></li>
-                        <li><a href="#">Request  a Quote</a></li>
-                    </ul>   
-                </div>
-            </div>
-            <!--End single footer widget-->
-            <!--Start single footer widget-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-footer-widget">
-                    <div class="title">
-                        <h3>Useful links</h3>
-                    </div>
-                    <ul class="useful-links">
-                        <li><a href="#">Online Documentation</a></li>
-                        <li><a href="#">Latest news</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">General enquiries</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">Customers Feedback</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--End single footer widget-->
-            <!--Start single footer widget-->
-            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
-                <div class="single-footer-widget pdtop50">
-                    <div class="title">
-                        <h3>Locations</h3>
-                    </div>
-                    <div class="newsletter-box">
-                        <div class="text">
-                            <p>Subscribing to our mailing list and receive weekly newsletter with latest news and offers.</p>
-                        </div>
-                        <form class="newsletter-form" action="#">
-                            <input type="email" name="email" placeholder="Your Email">
-                            <button type="submit"><i class="fa fa-check" aria-hidden="true"></i></button>
-                        </form> 
-                    </div>
-                    <div class="footer-social-links">
-                        <p>*We never spam!</p>
-                        <ul class="sociallinks-style-two fix">
-                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--End single footer widget-->
-        </div>
-    </div>
-</footer>   
-<!--End footer area-->
-
 <!--Start footer bottom area-->
 <section class="footer-bottom-area">
     <div class="container">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                 <div class="inner clearfix">
-                    <div class="copyright-text float-left">
-                        <p>© 2019 Screwer Theme by <a href="#">Themekalia.</a> All Rights <a href="http://www.bootstrapmb.com/" title="bootstrapmb">Reserved</a></p>
+                    <div class="copyright-text">
+                        <p>Copyright © 2019 Huaming All Rights Reserved. 华铭铝业 版权所有</p>
                     </div>
-                    <ul class="footer-menu float-right">
-                        <li><a href="#">UNSUBSCRIBE</a></li>
-                        <li><a href="#">TERMS OF USE</a></li>
-                        <li><a href="#">PRIVACY</a></li>
-                    </ul>
                 </div>   
             </div>
         </div>

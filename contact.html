@@ -100,36 +100,12 @@
                         </div>
                         <div class="navbar-collapse collapse clearfix">
                             <ul class="navigation clearfix">
-                                <li class="dropdown"><a href="index.html">主页</a>
-                                    <ul>
-                                        <li><a href="index.html">Home Page 01</a></li>
-                                        <li><a href="index-2.html">Home Page 02</a></li>
-                                    </ul>  
-                                </li>
-                                <li class="dropdown"><a href="index.html#about" onclick="toAbout()">企业概况</a>
-                                    <ul>
-                                        <li><a href="about.html">About Company</a></li>
-                                        <li><a href="testimonials.html">Testimonials</a></li>
-                                        <li><a href="faq.html">FAQ’s</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="project.html">产品中心</a></li>
-                                <li class="dropdown"><a href="project.html">技术装备</a>
-                                    <ul>
-                                        <li><a href="project.html">Projects Style One</a></li>
-                                        <li><a href="project-v2.html">Projects Style Two</a></li>
-                                        <li><a href="project-v3.html">Projects Style Masonry</a></li>
-                                        <li><a href="project-single.html">Projects Single</a></li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown"><a href="blog.html">人才招聘</a>
-                                    <ul>
-                                        <li><a href="blog.html">Blog Default</a></li>
-                                        <li><a href="blog-large.html">Blog Large Image</a></li>
-                                        <li><a href="blog-single.html">Blog Single Post</a></li>
-                                    </ul>
-                                </li>
-                                <li id="c_comments"><a href="#comments" onclick="toComments()">在线留言</a>
+                                <li><a href="index.html">主页</a> </li>
+                                <li><a href="index.html#about">企业概况</a></li>
+                                <li><a href="index.html#equip">技术装备</a></li>
+                                <li><a href="project.html">产品中心</a></li>                                
+                                <li><a href="blog.html">人才招聘</a></li>
+                                <li id="c_comments"><a href="#comments" onclick="toPart('c_comments')">在线留言</a>
                                 <li class="current"><a href="contact.html">联系我们</a></li>
                             </ul>
                         </div>
@@ -259,7 +235,7 @@
             <!--End Single Global Office-->
         </div>
         <div class="all-global-branch">
-            <h3>我们为您提供了全天24小时的<a href="#comments" onclick="toComments()">在线留言功能。</a></h3>
+            <h3>我们为您提供了全天24小时的<a href="#comments" onclick="toPart('c_comments')">在线留言功能。</a></h3>
         </div>
     </div>
 </section>  
@@ -447,11 +423,6 @@
 <script src="js/isotope.js"></script>
 <!-- Easing -->
 <script src="js/jquery.easing.min.js"></script>
-<!-- Gmap helper -->
-<script src="http://ditu.google.cn/maps/api/js?key=AIzaSyBZQiiFTOGpm2qHVZmZY1s-aEnmHDhqKgk"></script>
-<!--Gmap script-->
-<script src="js/gmaps.js"></script>
-<script src="js/map-helper.js"></script>
 <!-- jQuery ui js -->
 <script src="assets/jquery-ui-1.11.4/jquery-ui.js"></script>
 <!-- Language Switche  -->

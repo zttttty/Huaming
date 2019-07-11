@@ -4,7 +4,7 @@
 ||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
 ****************************************************************************************************************
 ****************************************************************************************************************
-最新最全最好的Bootstrap模板：http://www.bootstrapmb.com
+脳卯脨脗脳卯脠芦脳卯潞脙碌脛Bootstrap脛拢掳氓拢潞http://www.bootstrapmb.com
 01. Revolution slider
 02. Sticky header
 03. Prealoader
@@ -35,6 +35,22 @@ function toAbout() {
 function toComments() {
     $('.current').removeClass('current');
     $("#c_comments").addClass("current");
+}
+
+function toPart(partId) {
+    $('.current').removeClass('current');
+    $("#" + partId).addClass("current");
+}
+
+function changeNavi() {
+    
+    $(".navigation li a").each(function(){
+        var $this = $(this);
+        if($this[0].href==String(window.location)){
+            $(".navigation li").removeClass("current");
+            $this.parent().addClass('current');
+        }
+    });
 }
 
 //====Main menu===
@@ -937,6 +953,7 @@ if($("#appoinment-form").length){
 jQuery(document).on('ready', function () {
 	(function ($) {
         // add your functions
+        
         mainmenu ();
         languageSwitcher ();
         searchbox ();
@@ -959,8 +976,8 @@ jQuery(document).on('ready', function () {
         testimonialCarousel2();
         certificationsCarousel();
         projectSingleCarousel();
-        branchesCarousel()
-       
+        branchesCarousel();
+        changeNavi();
 
   
         
